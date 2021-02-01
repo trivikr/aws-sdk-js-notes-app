@@ -1,10 +1,12 @@
 import { s3Client } from "./s3Client";
-import { FILES_BUCKET } from "../config.json";
+import config from "../config.json";
 
 import { createRequest } from "@aws-sdk/util-create-request";
 import { GetObjectCommand } from "@aws-sdk/client-s3";
 import { S3RequestPresigner } from "@aws-sdk/s3-request-presigner";
 import { formatUrl } from "@aws-sdk/util-format-url";
+
+const { FILES_BUCKET } = config;
 
 const getObjectUrl = async (fileName: string) => {
   const request = await createRequest(
