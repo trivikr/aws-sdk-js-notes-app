@@ -4,7 +4,7 @@
   "private": true,
   "description": "Backend for todo app created using modular AWS SDK for JavaScript",
   "dependencies": {
-    "@aws-sdk/client-dynamodb": "3.4.1"
+    "@aws-sdk/client-dynamodb": "3.4.2-ci.0"
   },
   "scripts": {
     "build": "webpack",
