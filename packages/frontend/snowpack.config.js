@@ -4,6 +4,8 @@ module.exports = {
     public: { url: "/", static: true },
     src: { url: "/dist" },
   },
+  // Module "util" (Node.js built-in) is used in microphone-stream
+  polyfillNode: true,
   plugins: [
     "@snowpack/plugin-react-refresh",
     "@snowpack/plugin-dotenv",
